@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px;
+
+  >div:first-of-type {
+    min-width: 200px;
+    position: relative;
+    margin-right: 32px;
+
+    >div {
+      position: fixed;
+
+      >div {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  >div:nth-of-type(2) {
+    width: 100%;
+    margin-right: 32px;
+
+    >div {
+      margin-bottom: 32px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+  >div:nth-of-type(3) {
+    height: fit-content;
+    min-width: 360px;
+    position: relative;
+  }
+}
